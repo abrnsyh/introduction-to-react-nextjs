@@ -2,7 +2,8 @@
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
-	basePath: "/introduction-to-react-nextjs",
+	basePath: !debug ? "/introduction-to-react-nextjs" : "",
+	assetPrefix: !debug ? "/introduction-to-react-nextjs/" : "",
 };
 
 module.exports = nextConfig;
